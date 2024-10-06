@@ -1,0 +1,21 @@
+﻿@model IEnumerable<Testing1.Models.User>
+
+<h2>Users List</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Username</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.Username</td>  
+                <td>@user.Password</td>  
+            </tr>
+        }
+    </tbody>
+</table>
